@@ -1,0 +1,2519 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAM FINANCE AND LOAN | Loan Services</title>
+
+    <meta name="description"
+    content="RAM FINANCE AND LOAN - Explore loan options, EMI estimates and loan enquiry services.">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS WILL BE ADDED IN PART 5 -->
+    <style>
+
+    
+/* =========================================
+   RAM FINANCE AND LOAN
+   PREMIUM MODERN FINTECH UI
+========================================= */
+
+:root {
+    --navy: #071426;
+    --navy-light: #102541;
+    --blue: #3978ff;
+    --blue-light: #70a2ff;
+    --gold: #f2bd55;
+    --white: #ffffff;
+    --text: #17243a;
+    --muted: #718096;
+    --background: #f4f7fc;
+    --border: #e5eaf2;
+    --success: #16a36a;
+    --danger: #dc4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: min(1160px, 92%);
+    margin: auto;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/* HEADER */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.94);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 5px 30px rgba(7,20,38,.07);
+    border-bottom: 1px solid rgba(220,230,245,.7);
+}
+
+.nav-container {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    background: linear-gradient(135deg,#3978ff,#1744a0);
+    color: white;
+    font-size: 22px;
+    box-shadow: 0 7px 20px rgba(57,120,255,.3);
+}
+
+.logo-text {
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: .5px;
+}
+
+.logo-text small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 1.8px;
+    margin-top: 5px;
+    color: #66758c;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: #35445c;
+    transition: .25s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--blue);
+}
+
+.nav-apply {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 20px;
+    border-radius: 9px;
+    color: white;
+    background: linear-gradient(135deg,#3978ff,#2155c5);
+    font-weight: 700;
+    font-size: 13px;
+    box-shadow: 0 7px 20px rgba(57,120,255,.25);
+    transition: .25s;
+}
+
+.nav-apply:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(57,120,255,.35);
+}
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: var(--navy);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 24px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .25s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg,#4c89ff,#2458d1);
+    color: white;
+    box-shadow: 0 9px 24px rgba(57,120,255,.25);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(57,120,255,.35);
+}
+
+.btn-outline {
+    color: white;
+    border-color: rgba(255,255,255,.45);
+    background: rgba(255,255,255,.06);
+    backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--navy);
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    background:
+        radial-gradient(ellipse at 85% 15%,rgba(57,120,255,.30),transparent 35%),
+        radial-gradient(ellipse at 5% 90%,rgba(27,91,193,.24),transparent 35%),
+        #071426;
+    color: white;
+    padding: 115px 0;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 50%;
+    right: -100px;
+    top: -160px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 50%;
+    right: -40px;
+    top: -100px;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.hero-tag,
+.section-tag {
+    display: inline-block;
+    color: #8fb5ff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    max-width: 650px;
+    font-size: clamp(38px,5vw,65px);
+    line-height: 1.13;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+.hero h1 span {
+    display: block;
+    background: linear-gradient(90deg,#75a9ff,#f2bd55);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-content > p {
+    max-width: 570px;
+    color: #bdc9dc;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 32px;
+    color: #d5dfef;
+    font-size: 12px;
+}
+
+.hero-features i {
+    color: #78a8ff;
+    margin-right: 6px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image-card {
+    position: relative;
+    width: min(100%,370px);
+    min-height: 340px;
+    padding: 45px 35px;
+    border: 1px solid rgba(255,255,255,.17);
+    border-radius: 25px;
+    background: linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.035));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 30px 80px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+.hero-image-card > i {
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 22px;
+    background: linear-gradient(135deg,#4c89ff,#1744a0);
+    color: white;
+    font-size: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(57,120,255,.3);
+}
+
+.hero-image-card h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.hero-image-card p {
+    color: #c7d5e9;
+    font-size: 14px;
+}
+
+.hero-image-decoration {
+    position: absolute;
+    right: -12px;
+    bottom: -30px;
+    font-size: 135px;
+    color: rgba(255,255,255,.06);
+}
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 55px;
+}
+
+.section-heading h2 {
+    color: var(--navy);
+    font-size: clamp(28px,4vw,42px);
+    line-height: 1.2;
+    margin-bottom: 17px;
+    letter-spacing: -1px;
+}
+
+.section-heading h2 span {
+    color: var(--blue);
+}
+
+.section-heading p {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.section-tag {
+    color: var(--blue);
+}
+
+/* ABOUT */
+
+.about {
+    background: #fff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.about-content h3 {
+    font-size: 27px;
+    color: var(--navy);
+    margin-bottom: 18px;
+}
+
+.about-content > p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.about-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+    margin: 28px 0;
+}
+
+.about-point {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #35445c;
+}
+
+.about-point i {
+    color: var(--blue);
+}
+
+.about-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    width: min(100%,390px);
+    padding: 42px;
+    border-radius: 25px;
+    background: linear-gradient(145deg,#102b51,#071426);
+    color: white;
+    box-shadow: 0 25px 55px rgba(7,20,38,.18);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-card::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+    right: -80px;
+    bottom: -80px;
+}
+
+.about-card-icon {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    background: rgba(75,137,255,.2);
+    color: #80adff;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-bottom: 28px;
+}
+
+.about-card h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #bdc9dc;
+    font-size: 14px;
+}
+
+.about-card-bottom {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.16);
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #f2bd55;
+    font-weight: 800;
+}
+
+/* SERVICES */
+
+.services {
+    background: #f5f8fd;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.service-card {
+    padding: 30px;
+    background: white;
+    border: 1px solid #e8edf5;
+    border-radius: 18px;
+    transition: .3s;
+    box-shadow: 0 8px 25px rgba(16,35,65,.035);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #b9d0ff;
+    box-shadow: 0 20px 40px rgba(35,89,180,.10);
+}
+
+.service-icon {
+    width: 62px;
+    height: 62px;
+    display: grid;
+    place-items: center;
+    border-radius: 17px;
+    background: #edf3ff;
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 23px;
+    transition: .3s;
+}
+
+.service-card:hover .service-icon {
+    background: var(--blue);
+    color: white;
+    transform: rotate(-5deg);
+}
+
+.service-card h3 {
+    color: var(--navy);
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 13px;
+    min-height: 65px;
+    margin-bottom: 20px;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.service-link i {
+    transition: .2s;
+}
+
+.service-link:hover i {
+    transform: translateX(5px);
+}
+
+/* CALCULATOR */
+
+.calculator {
+    background: white;
+}
+
+.calculator-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 35px;
+    background: #f5f8fd;
+    border: 1px solid #e8edf5;
+    border-radius: 23px;
+    box-shadow: 0 15px 45px rgba(16,35,65,.06);
+}
+
+.calculator-form h3 {
+    color: var(--navy);
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #34445d;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dce4f0;
+    border-radius: 10px;
+    background: white;
+    color: var(--navy);
+    outline: none;
+    transition: .2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 4px rgba(57,120,255,.1);
+}
+
+.calculate-btn {
+    width: 100%;
+}
+
+.calculator-result {
+    padding: 35px;
+    border-radius: 18px;
+    background: linear-gradient(145deg,#102b51,#071426);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-icon {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 17px;
+    background: rgba(75,137,255,.2);
+    color: #80adff;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+/* APPLY / CONTACT FORMS */
+
+.apply,
+.contact {
+    background: #f5f8fd;
+}
+
+.apply-box,
+.contact-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 38px;
+    background: white;
+    border: 1px solid #e8edf5;
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(16,35,65,.06);
+}
+
+.apply-box h3,
+.contact-box h3 {
+    color: var(--navy);
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-submit {
+    width: 100%;
+}
+
+/* CONTACT */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.contact-info {
+    padding: 35px;
+    border-radius: 20px;
+    background: linear-gradient(145deg,#102b51,#071426);
+    color: white;
+}
+
+.contact-info h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #c2cee0;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin: 22px 0;
+}
+
+.contact-item i {
+    color: #80adff;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+.contact-item span {
+    color: #d6e0ef;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #061121;
+    color: white;
+    padding: 55px 0 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.footer p {
+    color: #aab8cc;
+    font-size: 13px;
+}
+
+.footer-bottom {
+    padding-top: 22px;
+    text-align: center;
+    color: #8392a9;
+    font-size: 12px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 999;
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    background: #20c56b;
+    color: white;
+    border-radius: 50%;
+    font-size: 29px;
+    box-shadow: 0 8px 25px rgba(32,197,107,.35);
+    transition: .25s;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content,
+.hero-image-card,
+.section-heading {
+    animation: fadeUp .8s ease both;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .navbar {
+        gap: 14px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+    .hero-container {
+        gap: 35px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .nav-container {
+        min-height: 72px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 15px 5%;
+        background: white;
+        box-shadow: 0 15px 25px rgba(0,0,0,.1);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 13px 5px;
+        font-size: 14px;
+    }
+
+    .nav-apply {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 75px 0;
+    }
+
+    .hero-container,
+    .about-grid,
+    .calculator-box,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-image-card {
+        min-height: 290px;
+    }
+
+    .about-grid {
+        gap: 35px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card p {
+        min-height: auto;
+    }
+
+    .calculator-box,
+    .apply-box,
+    .contact-box {
+        padding: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about-points {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 380px) {
+    .logo-text {
+        font-size: 17px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =================================
+         HEADER AND NAVIGATION
+    ================================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <!-- WEBSITE LOGO -->
+
+            <a href="#home" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </span>
+
+                <span class="logo-text">
+                    RAM
+                    <small>FINANCE AND LOAN</small>
+                </span>
+
+            </a>
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Toggle navigation">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <!-- NAVIGATION LINKS -->
+
+            <nav class="navbar" id="navbar">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About Us
+                </a>
+
+                <a href="#services" class="nav-link">
+                    Services
+                </a>
+
+                <a href="#calculator" class="nav-link">
+                    EMI Calculator
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+                <a href="#apply" class="nav-apply">
+                    Apply Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- =================================
+         HERO SECTION
+    ================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    YOUR FINANCIAL PARTNER
+                </span>
+
+                <h1>
+                    Find the Right Loan
+                    <span>For Your Needs</span>
+                </h1>
+
+                <p>
+                    Explore different loan options, compare estimated
+                    EMI payments and submit an enquiry with
+                    RAM FINANCE AND LOAN.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#apply" class="btn btn-primary">
+                        Apply For Loan
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#services" class="btn btn-outline">
+                        Explore Services
+                    </a>
+
+                </div>
+
+                <div class="hero-features">
+
+                    <div>
+                        <i class="fa-solid fa-check-circle"></i>
+                        Multiple Loan Options
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-calculator"></i>
+                        EMI Calculator
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="hero-image-card">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                    <h3>Plan Your Finance</h3>
+
+                    <p>
+                        Explore suitable financing options
+                        for your financial needs.
+                    </p>
+
+                    <div class="hero-image-decoration">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         ABOUT US SECTION
+    ================================== -->
+
+    <section class="about section-padding" id="about">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">ABOUT OUR BUSINESS</span>
+
+                <h2>
+                    Welcome to
+                    <span>RAM FINANCE AND LOAN</span>
+                </h2>
+
+                <p>
+                    Helping customers explore loan options
+                    and understand their financing choices.
+                </p>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-content">
+
+                    <h3>Your Financial Needs Matter</h3>
+
+                    <p>
+                        RAM FINANCE AND LOAN provides assistance
+                        to customers looking for different types
+                        of loan options.
+                    </p>
+
+                    <p>
+                        Whether you are planning to purchase
+                        a home, vehicle, or expand your business,
+                        you can contact us to discuss available
+                        financing options.
+                    </p>
+
+                    <div class="about-points">
+
+                        <div class="about-point">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Multiple loan categories
+                        </div>
+
+                        <div class="about-point">
+                            <i class="fa-solid fa-circle-check"></i>
+                            EMI estimation assistance
+                        </div>
+
+                        <div class="about-point">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Loan enquiry support
+                        </div>
+
+                        <div class="about-point">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Customer assistance
+                        </div>
+
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">
+                        Contact Us
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="about-visual">
+
+                    <div class="about-card">
+
+                        <div class="about-card-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+
+                        <h3>Financial Assistance</h3>
+
+                        <p>
+                            Explore loan possibilities
+                            according to your requirements
+                            and eligibility.
+                        </p>
+
+                        <div class="about-card-bottom">
+                            RAM FINANCE AND LOAN
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         LOAN SERVICES SECTION
+    ================================== -->
+
+    <section class="services section-padding" id="services">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">OUR SERVICES</span>
+
+                <h2>
+                    Explore Our
+                    <span>Loan Services</span>
+                </h2>
+
+                <p>
+                    Explore different loan categories
+                    and submit an enquiry for assistance.
+                </p>
+
+            </div>
+
+            <div class="services-grid">
+
+                <!-- PERSONAL LOAN -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Personal Loan</h3>
+
+                    <p>
+                        Explore personal loan options
+                        for eligible individual applicants.
+                    </p>
+
+                    <a href="#apply" class="service-link">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- HOME LOAN -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <h3>Home Loan</h3>
+
+                    <p>
+                        Explore financing options
+                        for purchasing or constructing a home.
+                    </p>
+
+                    <a href="#apply" class="service-link">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- VEHICLE LOAN -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+
+                    <h3>Vehicle Loan</h3>
+
+                    <p>
+                        Explore loan options for
+                        eligible two-wheeler and four-wheeler purchases.
+                    </p>
+
+                    <a href="#apply" class="service-link">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- BUSINESS LOAN -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3>Business Loan</h3>
+
+                    <p>
+                        Explore financing options
+                        for eligible business requirements.
+                    </p>
+
+                    <a href="#apply" class="service-link">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- PROPERTY LOAN -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <h3>Loan Against Property</h3>
+
+                    <p>
+                        Explore financing options
+                        against eligible property.
+                    </p>
+
+                    <a href="#apply" class="service-link">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- OTHER LOANS -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                    <h3>Other Loan Options</h3>
+
+                    <p>
+                        Contact us to enquire about
+                        other available loan categories.
+                    </p>
+
+                    <a href="#apply" class="service-link">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- =================================
+         EMI CALCULATOR SECTION
+    ================================== -->
+
+    <section class="calculator section-padding" id="calculator">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">SMART FINANCIAL PLANNING</span>
+
+                <h2>
+                    Calculate Your
+                    <span>Monthly EMI</span>
+                </h2>
+
+                <p>
+                    Estimate your monthly loan instalment
+                    using the calculator below.
+                </p>
+
+            </div>
+
+            <div class="calculator-box">
+
+                <div class="calculator-form">
+
+                    <h3>EMI Calculator</h3>
+
+                    <div class="form-group">
+
+                        <label for="loanAmount">
+                            Loan Amount (₹)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="loanAmount"
+                            value="500000"
+                            min="1000"
+                            placeholder="Enter loan amount"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="interestRate">
+                            Annual Interest Rate (%)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="interestRate"
+                            value="10"
+                            min="0"
+                            step="0.1"
+                            placeholder="Enter interest rate"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="loanTenure">
+                            Loan Tenure (Years)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="loanTenure"
+                            value="5"
+                            min="1"
+                            placeholder="Enter loan duration"
+                        >
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary calculate-btn"
+                        id="calculateEMI">
+
+                        Calculate EMI
+                        <i class="fa-solid fa-calculator"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="calculator-result">
+
+                    <div class="result-icon">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+
+                    <p class="result-label">
+                        Estimated Monthly EMI
+                    </p>
+
+                    <h2 id="emiResult">₹10,624</h2>
+
+                    <div class="result-details">
+
+                        <div class="result-row">
+
+                            <span>Loan Amount</span>
+
+                            <strong id="displayLoanAmount">
+                                ₹5,00,000
+                            </strong>
+
+                        </div>
+
+                        <div class="result-row">
+
+                            <span>Total Interest</span>
+
+                            <strong id="totalInterest">
+                                ₹1,37,440
+                            </strong>
+
+                        </div>
+
+                        <div class="result-row">
+
+                            <span>Total Payment</span>
+
+                            <strong id="totalPayment">
+                                ₹6,37,440
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <p class="calculator-note">
+                        This is an illustrative estimate only.
+                        Actual EMI may vary depending on lender
+                        terms, fees and applicable interest rates.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         LOAN ENQUIRY SECTION
+    ================================== -->
+
+    <section class="apply section-padding" id="apply">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">START YOUR ENQUIRY</span>
+
+                <h2>
+                    Submit Your
+                    <span>Loan Enquiry</span>
+                </h2>
+
+                <p>
+                    Share your details and requirements.
+                    Our team can contact you to discuss your enquiry.
+                </p>
+
+            </div>
+
+            <div class="apply-container">
+
+                <div class="apply-info">
+
+                    <div class="apply-info-icon">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+
+                    <h3>Let's Discuss Your Loan Requirements</h3>
+
+                    <p>
+                        Fill out the enquiry form with accurate
+                        information so your request can be reviewed.
+                    </p>
+
+                    <div class="apply-info-point">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Choose your loan category.
+
+                    </div>
+
+                    <div class="apply-info-point">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Share your contact details.
+
+                    </div>
+
+                    <div class="apply-info-point">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Submit your enquiry.
+
+                    </div>
+
+                    <div class="apply-contact">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+                            <small>Call us</small>
+                            <strong>+918426064287</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOAN ENQUIRY FORM -->
+
+                <form id="loanEnquiryForm" class="enquiry-form">
+
+                    <h3>Loan Enquiry Form</h3>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="customerName">
+                                Full Name *
+                            </label>
+                            
+<!-- APPOINTMENT DATE -->
+<label for="appointmentDate">Select Appointment Date</label>
+<input
+  type="date"
+  id="appointmentDate"
+  name="appointmentDate"
+  required
+>
+
+<!-- APPOINTMENT TIME -->
+<label for="appointmentTime">Select Appointment Time</label>
+<select id="appointmentTime" name="appointmentTime" required>
+  <option value="">Choose a time</option>
+  <option value="10:00 AM">10:00 AM</option>
+  <option value="11:00 AM">11:00 AM</option>
+  <option value="12:00 PM">12:00 PM</option>
+  <option value="01:00 PM">01:00 PM</option>
+  <option value="02:00 PM">02:00 PM</option>
+  <option value="03:00 PM">03:00 PM</option>
+  <option value="04:00 PM">04:00 PM</option>
+  <option value="05:00 PM">05:00 PM</option>
+  <option value="06:00 PM">06:00 PM</option>
+</select>
+                            <input
+                                type="text"
+                                id="customerName"
+                                name="name"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="customerPhone">
+                                Mobile Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="customerPhone"
+                                name="phone"
+                                placeholder="Enter mobile number"
+                                pattern="[6-9][0-9]{9}"
+                                maxlength="10"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="customerEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="customerEmail"
+                                name="email"
+                                placeholder="Enter email address"
+                            >
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="loanType">
+                                Loan Type *
+                            </label>
+
+                            <select
+                                id="loanType"
+                                name="loan_type"
+                                required>
+
+                                <option value="">
+                                    Select Loan Type
+                                </option>
+
+                                <option value="Personal Loan">
+                                    Personal Loan
+                                </option>
+
+                                <option value="Home Loan">
+                                    Home Loan
+                                </option>
+
+                                <option value="Vehicle Loan">
+                                    Vehicle Loan
+                                </option>
+
+                                <option value="Business Loan">
+                                    Business Loan
+                                </option>
+
+                                <option value="Loan Against Property">
+                                    Loan Against Property
+                                </option>
+
+                                <option value="Other Loan">
+                                    Other Loan
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="requestedAmount">
+                            Required Loan Amount (₹)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="requestedAmount"
+                            name="loan_amount"
+                            min="1"
+                            placeholder="Enter required amount"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customerMessage">
+                            Tell Us About Your Requirements *
+                        </label>
+
+                        <textarea
+                            id="customerMessage"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your enquiry here..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="form-checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="privacyConsent"
+                            required
+                        >
+
+                        <label for="privacyConsent">
+                            I agree to be contacted regarding my enquiry.
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary submit-btn">
+
+                        Submit Enquiry
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                    <p id="enquiryStatus" class="form-status"
+                    aria-live="polite"></p>
+
+                    <p class="form-disclaimer">
+                        Submitting this form does not guarantee
+                        loan approval or sanction. Loan eligibility
+                        and approval are subject to lender policies.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- =================================
+         CONTACT SECTION
+    ================================== -->
+
+    <section class="contact section-padding" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">GET IN TOUCH</span>
+
+                <h2>
+                    Contact
+                    <span>Our Team</span>
+                </h2>
+
+                <p>
+                    Have questions about loan options?
+                    Contact RAM FINANCE AND LOAN.
+                </p>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact-info">
+
+                    <h3>Contact Information</h3>
+
+                    <p>
+                        Reach us through phone, WhatsApp
+                        or email for general enquiries.
+                    </p>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <h4>Phone Number</h4>
+
+                            <a href="tel:+91 8426064287">
+                                +91 8426064287
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <div>
+                            <h4>WhatsApp</h4>
+
+                            <a
+                            href="https://wa.me/8426064287"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                                Chat With Us
+
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h4>Email Address</h4>
+
+                            <a href="mailto: dineshtank128@gmail.com">
+                                dineshtank128@gmail.com
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h4>Business Address</h4>
+
+                            <p>
+                                Pavta Naudya road, near tehsil road,
+                                Rajasthan, India
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <a
+                    href="https://www.google.com/maps/search/?api=1&query=49%2C%20Vikas%20Marg%2C%20Jodhpura%2C%20Rajasthan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline map-btn">
+
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        View Location
+
+                    </a>
+
+                </div>
+
+
+                <!-- CONTACT MESSAGE FORM -->
+
+                <div class="contact-form-box">
+
+                    <h3>Send Us a Message</h3>
+
+                    <p>
+                        Fill in the details below to send
+                        a general enquiry.
+                    </p>
+
+                    <form id="contactForm" class="contact-form">
+
+                        <div class="form-group">
+
+                            <label for="contactName">
+                                Your Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contactEmail">
+                                Email Address *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contactSubject">
+                                Subject *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactSubject"
+                                name="subject"
+                                placeholder="Enter message subject"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contactMessage">
+                                Your Message *
+                            </label>
+
+                            <textarea
+                                id="contactMessage"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary contact-submit-btn">
+
+                            Send Message
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+                        <p
+                            id="contactStatus"
+                            class="form-status"
+                            aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         FOOTER SECTION
+    ================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- FOOTER BRAND -->
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo footer-logo">
+
+                        <span class="logo-icon">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </span>
+
+                        <span class="logo-text">
+                            RAM
+                            <small>FINANCE AND LOAN</small>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Explore loan options and EMI estimates
+                        with RAM FINANCE AND LOAN.
+                    </p>
+
+                </div>
+
+
+                <!-- QUICK LINKS -->
+
+                <div class="footer-links">
+
+                    <h4>Quick Links</h4>
+
+                    <a href="#home">Home</a>
+
+                    <a href="#about">About Us</a>
+
+                    <a href="#services">Services</a>
+
+                    <a href="#calculator">EMI Calculator</a>
+
+                    <a href="#apply">Loan Enquiry</a>
+
+                    <a href="#contact">Contact</a>
+
+                </div>
+
+
+                <!-- FOOTER SERVICES -->
+
+                <div class="footer-links">
+
+                    <h4>Loan Categories</h4>
+
+                    <a href="#services">Personal Loan</a>
+
+                    <a href="#services">Home Loan</a>
+
+                    <a href="#services">Vehicle Loan</a>
+
+                    <a href="#services">Business Loan</a>
+
+                    <a href="#services">Loan Against Property</a>
+
+                </div>
+
+
+                <!-- FOOTER CONTACT -->
+
+                <div class="footer-links">
+
+                    <h4>Contact Details</h4>
+
+                    <a href="tel:+919351412907">
+                        +91 93514 12907
+                    </a>
+
+                    <a href="mailto:ironzone.fitness@gmail.com">
+                        Send Email
+                    </a>
+
+                    <a
+                    href="https://wa.me/919351412907"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                        WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear">2026</span>
+                    RAM FINANCE AND LOAN.
+                    All Rights Reserved.
+                </p>
+
+                <p>
+                    Loan approval and interest rates are
+                    subject to lender policies and eligibility.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =================================
+         FLOATING WHATSAPP BUTTON
+    ================================== -->
+
+    <a
+        href="https://wa.me/919351412907"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <!-- =================================
+         JAVASCRIPT START
+    ================================== -->
+
+    <script>
+
+    // =====================================
+    // WEB3FORMS API KEY
+    // =====================================
+
+    // REPLACE THIS PLACEHOLDER WITH YOUR REAL ACCESS KEY
+
+    const WEB3FORMS_KEY = "01425e0c-9751-4b32-ae56-2f2c37d3cab6";
+
+
+    // =====================================
+    // BUSINESS INFORMATION
+    // =====================================
+
+    const BUSINESS_NAME = "RAM FINANCE AND LOAN";
+
+
+    // =====================================
+    // MOBILE NAVIGATION
+    // =====================================
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navbar = document.getElementById("navbar");
+
+    menuToggle.addEventListener("click", function () {
+
+        navbar.classList.toggle("show");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (navbar.classList.contains("show")) {
+            icon.classList.replace("fa-bars", "fa-xmark");
+        } else {
+            icon.classList.replace("fa-xmark", "fa-bars");
+        }
+
+    });
+
+
+    // CLOSE MOBILE MENU AFTER CLICKING A LINK
+
+    document.querySelectorAll(".navbar a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navbar.classList.remove("show");
+
+            const icon = menuToggle.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        });
+
+    });
+
+
+    // =====================================
+    // CURRENT YEAR IN FOOTER
+    // =====================================
+
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+
+    // =====================================
+    // EMI CALCULATOR
+    // =====================================
+
+    const calculateButton =
+        document.getElementById("calculateEMI");
+
+    calculateButton.addEventListener("click", calculateEMI);
+
+    function formatRupees(amount) {
+
+        return new Intl.NumberFormat("en-IN", {
+            style: "currency",
+            currency: "INR",
+            maximumFractionDigits: 0
+        }).format(amount);
+
+    }
+
+
+    function calculateEMI() {
+
+        const principal = Number(
+            document.getElementById("loanAmount").value
+        );
+
+        const annualRate = Number(
+            document.getElementById("interestRate").value
+        );
+
+        const years = Number(
+            document.getElementById("loanTenure").value
+        );
+
+        if (
+            !Number.isFinite(principal) ||
+            !Number.isFinite(annualRate) ||
+            !Number.isFinite(years) ||
+            principal <= 0 ||
+            annualRate < 0 ||
+            years <= 0 ||
+            years > 50 ||
+            annualRate > 100
+        ) {
+
+            alert("Please enter valid loan details.");
+            return;
+
+        }
+
+        const monthlyRate = annualRate / 12 / 100;
+        const months = years * 12;
+
+        let emi;
+
+        if (monthlyRate === 0) {
+
+            emi = principal / months;
+
+        } else {
+
+            const power = Math.pow(1 + monthlyRate, months);
+
+            emi =
+                principal *
+                monthlyRate *
+                power /
+                (power - 1);
+
+        }
+
+        const totalPayment = emi * months;
+        const totalInterest = totalPayment - principal;
+
+        document.getElementById("emiResult").textContent =
+            formatRupees(emi);
+
+        document.getElementById("displayLoanAmount").textContent =
+            formatRupees(principal);
+
+        document.getElementById("totalInterest").textContent =
+            formatRupees(totalInterest);
+
+        document.getElementById("totalPayment").textContent =
+            formatRupees(totalPayment);
+
+    }
+
+
+    // CALCULATE INITIAL EMI ON PAGE LOAD
+
+    calculateEMI();
+
+
+    // =====================================
+    // WEB3FORMS FORM SUBMISSION FUNCTION
+    // =====================================
+
+    async function submitWeb3Form(form, subject, statusElement, button) {
+
+        if (
+            !WEB3FORMS_KEY ||
+            WEB3FORMS_KEY === "xxxx-xxxx-xxxx"
+        ) {
+
+            statusElement.textContent =
+                "Please configure your Web3Forms Access Key first.";
+
+            statusElement.className = "form-status error";
+
+            return;
+
+        }
+
+        const originalButtonText = button.innerHTML;
+
+        button.disabled = true;
+        button.textContent = "Sending...";
+
+        statusElement.textContent = "";
+        statusElement.className = "form-status";
+
+        try {
+
+            const formData = new FormData(form);
+
+            formData.append("access_key", WEB3FORMS_KEY);
+
+            formData.append("subject", subject);
+
+            formData.append("from_name", BUSINESS_NAME);
+
+            const emailInput = form.querySelector(
+                'input[type="email"]'
+            );
+
+            if (emailInput && emailInput.value.trim()) {
+
+                formData.append("replyto", emailInput.value.trim());
+
+            }
+
+            const response = await fetch(
+                "https://api.web3forms.com/submit",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            );
+
+            const result = await response.json();
+
+            if (!response.ok || !result.success) {
+
+                throw new Error(
+                    result.message || "Unable to send your enquiry."
+                );
+
+            }
+
+            statusElement.textContent =
+                "Your message has been submitted successfully!";
+
+            statusElement.className = "form-status success";
+
+            form.reset();
+
+        } catch (error) {
+
+            console.error("Form submission error:", error);
+
+            statusElement.textContent =
+                error.message ||
+                "Something went wrong. Please try again.";
+
+            statusElement.className = "form-status error";
+
+        } finally {
+
+            button.disabled = false;
+            button.innerHTML = originalButtonText;
+
+        }
+
+    }
+
+
+    // =====================================
+    // LOAN ENQUIRY FORM
+    // =====================================
+
+    const loanEnquiryForm =
+        document.getElementById("loanEnquiryForm");
+
+    loanEnquiryForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+        if (!loanEnquiryForm.reportValidity()) {
+            return;
+        }
+
+        const button = loanEnquiryForm.querySelector(
+            'button[type="submit"]'
+        );
+
+        const status = document.getElementById("enquiryStatus");
+
+        await submitWeb3Form(
+            loanEnquiryForm,
+            "New Loan Enquiry - RAM FINANCE AND LOAN",
+            status,
+            button
+        );
+
+    });
+
+
+    // =====================================
+    // CONTACT FORM
+    // =====================================
+
+    const contactForm =
+        document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+        if (!contactForm.reportValidity()) {
+            return;
+        }
+
+        const button = contactForm.querySelector(
+            'button[type="submit"]'
+        );
+
+        const status = document.getElementById("contactStatus");
+
+        await submitWeb3Form(
+            contactForm,
+            "New Contact Message - RAM FINANCE AND LOAN",
+            status,
+            button
+        );
+
+    });
+
+
+    // =====================================
+    // JAVASCRIPT END
+    // =====================================
+
+    </script>
+
+
+    
+
+</body>
+</html>
+
+
+    
